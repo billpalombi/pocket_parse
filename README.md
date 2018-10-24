@@ -5,13 +5,20 @@ This is a simple Python script that parses the `ril_export.html` file from [Pock
 The csv file has eight columns. Each pocketed webpage is on a seperate row.
 
 **status** - Either `Unread` or `Read Archive`
-**title** - The title of the webpage pocketed
-**href** - full URL of the webpage pocketed
-**domain** - the root or sub domain of the webpage pocketed
-**date_added** - The calendar date that the webpage was pocketed
-**time_added** - The time of day that the webpage was pocketed
-**day_of_week_added** - The day of the week that the webpage was pocketed
-**tags** - A comma seperated list of tags assigned to the webpage
+
+**title** - The title of the webpage pocketed 
+
+**href** - full URL of the webpage pocketed 
+
+**domain** - the root or sub domain of the webpage pocketed 
+
+**date_added** - The calendar date that the webpage was pocketed 
+
+**time_added** - The time of day that the webpage was pocketed 
+
+**day_of_week_added** - The day of the week that the webpage was pocketed 
+
+**tags** - A comma seperated list of tags assigned to the webpage 
 
 ## Requirements
 * Python 2.x
