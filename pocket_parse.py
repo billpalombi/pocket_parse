@@ -9,7 +9,7 @@ soup = BeautifulSoup(pocket_list, "html.parser")
 
 #create csv and write header
 pocket_csv = csv.writer(open("pocket.csv", "w"))
-pocket_csv.writerow(["status", "title", "href", "domain","date", "time", "day_of_week", "tags"])
+pocket_csv.writerow(["status", "title", "href", "domain","date_added", "time_added", "day_of_week_added", "tags"])
 
 #iterate through each link
 links = soup.findAll('a')
@@ -23,10 +23,10 @@ for link in links:
 	
 	#get epoch time and split
 	time_added = float(link['time_added'])
-	date = datetime.fromtimestamp(time_added).strftime("%x")
-	time = datetime.fromtimestamp(time_added).strftime("%X")
-	day_of_week = datetime.fromtimestamp(time_added).strftime("%A")
+	date_added = datetime.fromtimestamp(time_added).strftime("%x")
+	time_added = datetime.fromtimestamp(time_added).strftime("%X")
+	day_of_week_added = datetime.fromtimestamp(time_added).strftime("%A")
 	
 	#write row to file
-	row = (status, title, href, domain, date, time, day_of_week, tags)
+	row = (status, title, href, domain, date_added, time_added, day_of_week_added, tags)
 	pocket_csv.writerow(row)
