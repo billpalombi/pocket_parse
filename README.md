@@ -30,3 +30,7 @@ The csv file has eight columns. Each pocketed webpage is on a seperate row.
 ## Usage
 1. Save the `ril_export.html` file exported from Pocket in the same directory as `pocket_parse.py`
 2. Run the script from the terminal `python pocket_parse.py`
+
+## Bill
+Bill it's me Dan. I hope you're having a nice night. Bye bye.
+Oh one more thing. We should do dinner next week or something.
